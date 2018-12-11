@@ -21,14 +21,15 @@ echo -e
 while [ 1 ]; do
 echo -n ""$login"@"$hote"$ "
 read reps
+
 case $reps in
   help | hlp )
      echo -e "\e[1;33mPour les credits -> about"
      echo "ls -> liste les fichiers"
-     echo "rm -> d?truit un fichier (guid?)"
-     echo "rmd -> efface un dossier (guid?)"
+     echo "rm -> détruit un fichier (guidé)"
+     echo "rmd -> efface un dossier (guidé)"
      echo "noyau -> version du noyau Linux"
-     echo "connect -> savoir qui s'est connect? derni?rement";;
+     echo "connect -> savoir qui s'est connecté dernièrement";;
   ls )
      ls -la;;
   rm )
@@ -36,7 +37,7 @@ case $reps in
      read eff
      rm -f $eff;;
   rmd | rmdir )
-     echo -n "Quel r?pertoire voulez-vous effacer : "
+     echo -n "Quel répertoire voulez-vous effacer : "
      read eff
      rm -r $eff;;
   noyau | "uname -r" )
