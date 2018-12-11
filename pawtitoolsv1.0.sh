@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 clear
 apt install toilet
 apt install curl
@@ -23,34 +23,33 @@ echo -n ""$login"@"$hote"$ "
 read reps
 
 case $reps in
-? help | hlp )
-???? echo -e "\e[1;33mPour les credits -> about"
-???? echo "ls -> liste les fichiers"
-???? echo "rm -> d?truit un fichier (guid?)"
-???? echo "rmd -> efface un dossier (guid?)"
-???? echo "noyau -> version du noyau Linux"
-???? echo "connect -> savoir qui s'est connect? derni?rement";;
-? ls )
-???? ls -la;;
-? rm )
-???? echo -n "Quel fichier voulez-vous effacer : "
-???? read eff
-???? rm -f $eff;;
-? rmd | rmdir )
-???? echo -n "Quel r?pertoire voulez-vous effacer : "
-???? read eff
-???? rm -r $eff;;
-? noyau | "uname -r" )
-???? uname -r;;
-uname -r;;
-? connect )
-???? last;;
-? about | --v | vers )
-???? echo "GitHub : Cuaj0kLs | Instagram : CuajokLs";;
-? quit | "exit" )
-???? echo Au revoir...!
-???? break;;
-? * )
-??? echo "Commande inconnue";;
+  help | hlp )
+     echo -e "\e[1;33mPour les credits -> about"
+     echo "ls -> liste les fichiers"
+     echo "rm -> d?truit un fichier (guid?)"
+     echo "rmd -> efface un dossier (guid?)"
+     echo "noyau -> version du noyau Linux"
+     echo "connect -> savoir qui s'est connect? derni?rement";;
+  ls )
+     ls -la;;
+  rm )
+     echo -n "Quel fichier voulez-vous effacer : "
+     read eff
+     rm -f $eff;;
+  rmd | rmdir )
+     echo -n "Quel r?pertoire voulez-vous effacer : "
+     read eff
+     rm -r $eff;;
+  noyau | "uname -r" )
+     uname -r;;
+  connect )
+     last;;
+  about | --v | vers )
+     echo "GitHub : Cuaj0kLs | Instagram : CuajokLs";;
+  quit | "exit" )
+  echo Au revoir...!
+     break;;
+  * )
+    echo "Commande inconnue";;
 esac
 done
