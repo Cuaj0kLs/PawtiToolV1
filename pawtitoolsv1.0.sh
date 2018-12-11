@@ -12,7 +12,7 @@ echo
 echo -e "\033[1;31m"
 echo -n "LOGIN: "
 read login
-echo -n "H?te: "
+echo -n "Hôte: "
 read hote
 echo "_________________________________"
 echo
@@ -21,7 +21,6 @@ echo -e
 while [ 1 ]; do
 echo -n ""$login"@"$hote"$ "
 read reps
-
 case $reps in
   help | hlp )
      echo -e "\e[1;33mPour les credits -> about"
