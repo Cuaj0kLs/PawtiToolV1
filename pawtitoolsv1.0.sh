@@ -4,7 +4,9 @@ apt install toilet
 apt install curl
 echo
 clear
-toilet -f smblock --filter border:metal "PawtiToolsV1"
+echo -e "\033[34;44"
+cat title.txt
+echo -e "\033[0m"
 echo -e "\033[7mVersion 1.0\033[0m"
 echo -e "\033[45mBy CuajokLs \033[0m"
 curl ifconfig.me
