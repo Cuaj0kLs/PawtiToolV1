@@ -1,4 +1,25 @@
-#!/bin/bash
+#!/usr/bin/bash
+    # Script : choix.sh
+apt install neofetch
+clear
+neofetch
+read -p "Appuyer sur ENTRER pour continuer..."
+clear
+cat title2.txt
+echo -e "\033[45mBy CuajokLs \033[0m"                                                  curl ifconfig.me
+echo
+echo
+ PS3="Choisissez votre option > "
+    select choix in \
+       "launch aircrack-ng" \
+       "DosAttack" \
+       "PawtiTools" \
+       "exit"
+     do
+       case $REPLY in
+          1) tezt ;;
+          2) ipsecscan ;;
+          3) #!/bin/bash
 clear
 apt install toilet
 apt install curl
@@ -25,7 +46,7 @@ echo -n ""$login"@"$hote"$ "
 read reps
 
 case $reps in
-  help | hlp )
+help | hlp )
      echo -e "\e[1;33mPour les credits -> about"
      echo "ls -> liste les fichiers"
      echo "rm -> détruit un fichier (guidé)"
@@ -55,3 +76,10 @@ case $reps in
     echo "Commande inconnue";;
 esac
 done
+ ;;
+          4) echo "exit....."
+             break ;;
+          *) echo "options not valid !!!" ;;
+       esac
+   exit
+   done
